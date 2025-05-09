@@ -1,7 +1,19 @@
 [versions]
+firebase-bom = "33.13.0"
 
 [libraries]
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-cloud-messaging = { group = "com.google.firebase", name = "firebase-cloud-messaging-ktx" }
+firebase-remote-config = { group = "com.google.firebase", name = "firebase-remote-config-ktx" }
 
 [bundles]
+firebase = [
+    "firebase-analytics",
+    "firebase-crashlytics",
+    "firebase-cloud-messaging",
+    "firebase-remote-config"
+]
 
 [plugins]
