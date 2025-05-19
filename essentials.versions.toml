@@ -1,19 +1,24 @@
 [versions]
 firebase-bom = "33.13.0"
+gms-services = "4.4.2"
 
 [libraries]
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
 firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
-firebase-cloud-messaging = { group = "com.google.firebase", name = "firebase-cloud-messaging-ktx" }
-firebase-remote-config = { group = "com.google.firebase", name = "firebase-remote-config-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+firebase-config = { group = "com.google.firebase", name = "firebase-config" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }
 
 [bundles]
 firebase = [
     "firebase-analytics",
     "firebase-crashlytics",
-    "firebase-cloud-messaging",
-    "firebase-remote-config"
+    "firebase-messaging",
+    "firebase-config",
+    "firebase-auth"
 ]
 
 [plugins]
+gms-services = { id = "com.google.gms.google-services", version.ref = "gms-services" }
+crashlytics = { id = "com.google.firebase.crashlytics", version = "3.0.3" }
