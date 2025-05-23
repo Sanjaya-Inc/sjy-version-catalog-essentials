@@ -1,6 +1,7 @@
 [versions]
 firebase-bom = "33.13.0"
 gms-services = "4.4.2"
+stripe = "21.14.0"
 
 [libraries]
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
@@ -9,6 +10,8 @@ firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashly
 firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
 firebase-config = { group = "com.google.firebase", name = "firebase-config" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }
+stripe-android = { group = "com.stripe", name = "stripe-android", version.ref = "stripe" }
+stripe-financial-connections = { group = "com.stripe", name = "financial-connections", version.ref = "stripe" }
 
 [bundles]
 firebase = [
@@ -17,6 +20,10 @@ firebase = [
     "firebase-messaging",
     "firebase-config",
     "firebase-auth"
+]
+stripe = [
+    "stripe-android",
+    "stripe-financial-connections"
 ]
 
 [plugins]
