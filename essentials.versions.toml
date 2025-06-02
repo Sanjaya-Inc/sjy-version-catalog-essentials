@@ -1,5 +1,5 @@
 [versions]
-firebase-bom = "33.13.0"
+firebase-bom = "33.14.0"
 gms-services = "4.4.2"
 stripe = "21.14.0"
 
